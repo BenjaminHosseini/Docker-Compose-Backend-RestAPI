@@ -6,7 +6,7 @@ This project demonstrates container orchestration, service networking, persisten
 
 ---
 
-# 🚀 Features
+# Features
 
 - Multi-container application architecture
 - Docker Compose orchestration
@@ -18,9 +18,8 @@ This project demonstrates container orchestration, service networking, persisten
 - Environment variable configuration
 - Containerized Node.js services
 
----
 
-# 🏗️ Architecture
+# Architecture
 
 The application consists of the following services:
 
@@ -35,23 +34,7 @@ Docker Compose manages:
 - container lifecycle
 - persistent storage
 
----
-
-# 📂 Project Structure
-
-```bash
-.
-├── compose.yaml
-├── compose.override.yaml
-├── reverse-proxy/
-│   └── nginx.conf
-├── notes-backend/
-├── notebooks-backend/
-```
-
----
-
-# ⚙️ Prerequisites
+# Prerequisites
 
 Before running the project, install:
 
@@ -65,9 +48,7 @@ docker --version
 docker compose version
 ```
 
----
-
-# ▶️ Running the Application
+# Running the Application
 
 Clone the repository:
 
@@ -88,9 +69,7 @@ Run in detached mode:
 docker compose up -d --build
 ```
 
----
-
-# 🛑 Stop Services
+# Stop Services
 
 ```bash
 docker compose down
@@ -102,9 +81,7 @@ Remove volumes:
 docker compose down -v
 ```
 
----
-
-# 🌐 API Access
+# API Access
 
 Example endpoints:
 
@@ -113,9 +90,7 @@ http://localhost/api/notes
 http://localhost/api/notebooks
 ```
 
----
-
-# 🗄️ Persistent Storage
+# Persistent Storage
 
 MongoDB data is persisted using Docker volumes.
 
@@ -126,9 +101,7 @@ volumes:
   - mongo-data:/data/db
 ```
 
----
-
-# 🔀 Reverse Proxy
+# Reverse Proxy
 
 NGINX acts as a reverse proxy and routes incoming requests to backend services.
 
@@ -140,9 +113,7 @@ location /api/notes {
 }
 ```
 
----
-
-# 🔒 Environment Variables
+# Environment Variables
 
 Example `.env` configuration:
 
@@ -151,9 +122,7 @@ PORT=3000
 MONGO_URI=mongodb://mongodb:27017/notes-db
 ```
 
----
-
-# 🧪 Useful Docker Commands
+# Useful Docker Commands
 
 View running containers:
 
@@ -179,10 +148,6 @@ Remove unused Docker resources:
 docker system prune -a
 ```
 
----
-
-# 📚 Learning Objectives
-
 This project demonstrates:
 
 - Docker containerization
@@ -199,6 +164,6 @@ This project demonstrates:
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 Benjamin Hosseini
